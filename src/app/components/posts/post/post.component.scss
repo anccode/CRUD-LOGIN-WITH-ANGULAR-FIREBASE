@@ -1,0 +1,48 @@
+.mat-card{
+    background: #6b202e;
+    color: #6b202e;
+    width: 80%;
+    margin: 1% auto;
+    padding:2% ;
+    border-radius: 0;
+    box-shadow: initial;
+    .mat-card-title{
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+    .mat-card-content{
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+        p.content{
+            text-align: initial;
+        }
+    }
+    img{
+        width: 100%;
+        border-radius: 6px;
+    }
+    
+}
+
+.aling-center{
+    text-align: center;
+    clear:both;
+    display: block;
+    margin: 6px auto;
+}
+
+a{
+    cursor:pointer;
+    color: #fff;
+    text-decoration: none;
+}
+
+img {
+    height: 250px;
+}
+p.content{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

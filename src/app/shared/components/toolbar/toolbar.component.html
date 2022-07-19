@@ -1,0 +1,12 @@
+<mat-toolbar color = "primary">
+    <div class="logo">
+        <a routerLink="/" RouterLinkActive="active"><img src="..\assets\img\Logo20_fia.png" alt=""></a>
+    </div>
+    <span class="fill-remaining-space"></span>
+    <a routerLink="/perfil/posts" RouterLinkActive="active" *ngIf="authSvc.userData$ | async"><button mat-button>Perfil</button></a>    
+    
+    <a *ngIf="authSvc.userData$ | async; else showLogin" (click) = "onLogout()" ><button mat-button>CERRAR SESION</button></a>
+    <ng-template #showLogin>
+        <a routerLink="/IniciarSession" RouterLinkActive="active"><button mat-button>INICIAR SESION</button></a>
+    </ng-template>
+</mat-toolbar>

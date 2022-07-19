@@ -1,0 +1,25 @@
+{
+  "targets": {
+    "blog-a4136": {
+      "hosting": {
+        "practica-upeu": [
+          "blog-a4136"
+        ]
+      }
+    },
+    "practicas-upeu": {
+      "hosting": {
+        "practica-upeu": [
+          "practicas-upeu"
+        ]
+      }
+    },
+    "system-practice-upeu": {
+      "hosting": {
+        "practica-upeu": [
+          "system-practice-upeu"
+        ]
+      }
+    }
+  }
+}

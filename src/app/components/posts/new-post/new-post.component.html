@@ -1,0 +1,16 @@
+<div class="new-post-container">
+    <form [formGroup] = "newPostForm" (ngSubmit)="addNewPost(newPostForm.value)" >        
+            <div class="datosalumno">
+            <br>
+            <h2>DATOS DEL PROGRAMA</h2>
+            <br>
+            <mat-form-field>
+                <mat-label>title</mat-label>
+                <input matInput placeholder="title" formControlName="title" >
+            </mat-form-field>
+            </div>
+            <div class="container-button">
+                <input type="submit" class="mat-flat-button" value="Enviar Solicitud" [mat-dialog-close]="true">
+            </div>
+    </form>
+</div>
