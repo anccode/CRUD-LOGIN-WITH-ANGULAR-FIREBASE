@@ -52,6 +52,8 @@ export class PostService {
     
     const postObj = {
       title: post.title,
+      docente: post.docente,
+      fecha: post.fecha,
     };
     if(post.id){
       return this.postsCollection.doc(post.id).update(postObj);

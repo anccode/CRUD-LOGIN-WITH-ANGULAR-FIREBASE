@@ -19,6 +19,8 @@ export class EditPostComponent implements OnInit {
   public editPostForm = new FormGroup({
     id: new FormControl('', Validators.required),
     title: new FormControl('', Validators.required),
+    docente: new FormControl('', Validators.required),
+    fecha: new FormControl('', Validators.required),
   })
 
   ngOnInit(): void {
@@ -45,6 +47,8 @@ export class EditPostComponent implements OnInit {
     this.editPostForm.patchValue({
       id: this.post.id,
       nombre: this.post.title, 
+      docente: this.post.title, 
+      fecha: this.post.title, 
     });
   }
 

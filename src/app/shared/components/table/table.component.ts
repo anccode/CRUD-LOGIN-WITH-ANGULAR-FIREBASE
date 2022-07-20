@@ -22,7 +22,7 @@ export interface PeriodicElement{
   styleUrls: ['./table.component.scss']
 })
 export class TableComponent implements OnInit, AfterViewInit {
-  displayedColumns: string[]=['title','actions'];;
+  displayedColumns: string[]=['title','docente', 'fecha','actions'];;
   dataSource = new MatTableDataSource();
   
   @ViewChild(MatPaginator,{static:true})paginator: MatPaginator;

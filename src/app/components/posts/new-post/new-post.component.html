@@ -8,9 +8,17 @@
                 <mat-label>title</mat-label>
                 <input matInput placeholder="title" formControlName="title" >
             </mat-form-field>
+            <mat-form-field>
+                <mat-label>docente</mat-label>
+                <input matInput placeholder="docente" formControlName="docente" >
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>fecha</mat-label>
+                <input matInput type="date" placeholder="fecha" formControlName="fecha" >
+            </mat-form-field>
             </div>
             <div class="container-button">
-                <input type="submit" class="mat-flat-button" value="Enviar Solicitud" [mat-dialog-close]="true">
+                <input type="submit" class="mat-flat-button" value="AGREGAR PROGRAMA" [mat-dialog-close]="true">
             </div>
     </form>
 </div>
